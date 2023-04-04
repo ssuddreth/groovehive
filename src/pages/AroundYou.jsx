@@ -20,7 +20,7 @@ const CountryTracks = () => {
       .finally(() => setLoading(false));
   }, [country]);
 
-  if (isFetching && loading) return <Loader title="Loading Songs around you..." />;
+  if (isFetching && loading) return <Loader title="Loading Songs Around Your Local Hive..." />;
 
   if (error && country !== '') return <Error />;
 
